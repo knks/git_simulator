@@ -41,3 +41,6 @@ Webエンジニアの業務においてはGitを使ったバージョン管理�
 - 機能実装 5/19〆切
 - β版リリース(RUNTEQ内) 5/19〆切
 - 本リリース 5/31〆切
+
+## 画面遷移図
+https://www.figma.com/file/gIOuwiuTpOiEP7MQ8eiF9f/Git-Simulator?node-id=0%3A1
