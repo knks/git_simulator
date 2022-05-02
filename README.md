@@ -44,3 +44,6 @@ Webエンジニアの業務においてはGitを使ったバージョン管理�
 
 ## 画面遷移図
 https://www.figma.com/file/gIOuwiuTpOiEP7MQ8eiF9f/Git-Simulator?node-id=0%3A1
+
+## ER図
+https://drive.google.com/drive/u/0/my-drive
