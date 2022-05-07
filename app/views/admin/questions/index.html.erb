@@ -1,0 +1,13 @@
+問題一覧
+
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-12">
+      <% if @questions.present? %>
+        <%= render @questions %>
+      <% else %>
+        <%= "登録されている問題はありません" %>
+      <% end %>
+    </div>
+  </div>
+</div>
