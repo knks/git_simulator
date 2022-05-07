@@ -1,0 +1,14 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    logout: 'ログアウト'
+    create: '作成'
+    edit: '編集'
+    update: '更新'
+    destroy: '削除'
+  admin:
+    questions:
+      index:
+        title: '問題一覧'
+      new:
+        title: '問題新規作成'
