@@ -1,1 +1,21 @@
 ja:
+  activerecord:
+    models:
+      question: '問題'
+    attributes:
+      question:
+        title: 'タイトル'
+        body: '問題文'
+      choice:
+        content: '選択肢'
+        is_answer: '正答選択'
+      hint:
+        content: 'ヒント'
+      user:
+        name: 'ユーザーネーム'
+        password: 'パスワード'
+        password_confirmation: 'パスワード確認'
+      command:
+        command: 'コマンド'
+        detail: 'コマンド詳細'
+        type: 'コマンドタイプ'

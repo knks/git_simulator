@@ -1,7 +1,9 @@
 class Admin::QuestionsController < ApplicationController
   before_action :get_question, only: %i[show edit update destroy]
 
-  def index ;end
+  def index
+    @questions = Question.all
+  end
 
   def new
     @question = Question.new
