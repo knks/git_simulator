@@ -6,6 +6,7 @@ ja:
     edit: '編集'
     update: '更新'
     destroy: '削除'
+    delete_confirm: '削除しますか？'
   admin:
     questions:
       index:
@@ -15,6 +16,11 @@ ja:
       create:
         success: '問題を新規作成しました'
         fail: '問題の作成に失敗しました'
+      edit:
+        title: '問題編集'
+      update:
+        success: '問題を編集しました'
+        fail: '問題を編集できませんでした'
       destroy:
         success: '問題を削除しました'
         fail: '問題を削除できませんでした'

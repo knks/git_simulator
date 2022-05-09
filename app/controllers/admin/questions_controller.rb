@@ -15,7 +15,7 @@ class Admin::QuestionsController < ApplicationController
       redirect_to admin_questions_path, success: t('.success')
     else
       flash.now[:danger] = t('.fail')
-      render new
+      render :new
     end
   end
 
@@ -24,9 +24,17 @@ class Admin::QuestionsController < ApplicationController
   def edit ;end
 
   def update
+    if @question.update(question_params)
+      redirect_to admin_questions_path, success: t('.success')
+    else
+      flash.now[:danger] = t('.fail')
+      render :edit
+    end
   end
 
   def destroy
+    @question.destroy!
+    redirect_to admin_questions_path, success: t('.success')
   end
 
   private
