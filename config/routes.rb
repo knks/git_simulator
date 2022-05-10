@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'questions#index'
+  root to: 'static_pages#top'
   get 'questions', to: 'questions#index'
   
   namespace :admin do
