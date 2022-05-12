@@ -1,5 +1,6 @@
 class Admin::QuestionsController < ApplicationController
   before_action :get_question, only: %i[show edit update destroy]
+  before_action :require_login
 
   def index
     @questions = Question.all
