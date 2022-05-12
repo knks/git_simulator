@@ -7,6 +7,7 @@ ja:
     update: '更新'
     destroy: '削除'
     delete_confirm: '削除しますか？'
+    resister: '登録'
   admin:
     questions:
       index:
@@ -24,3 +25,20 @@ ja:
       destroy:
         success: '問題を削除しました'
         fail: '問題を削除できませんでした'
+  users:
+    new:
+      title: '新規ユーザー登録'
+      to_login_page: 'ログインはこちら'
+    create:
+      success: 'ユーザー登録しました'
+      fail: 'ユーザー登録できませんでした'
+  user_sessions:
+    new:
+      title: 'ユーザーログイン'
+      to_resister_page: 'ユーザー登録'
+      password_forget: 'パスワードをお忘れの方はこちら'
+    create:
+      success: 'ログインしました'
+      fail: 'ログインに失敗しました'
+    destroy:
+      success: 'ログアウトしました'
