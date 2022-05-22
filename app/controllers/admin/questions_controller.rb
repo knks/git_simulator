@@ -7,12 +7,12 @@ class Admin::QuestionsController < ApplicationController
   end
 
   def new
-    @question = Question.new
+    @resister_quiz_form = ResisterQuizForm.new
   end
 
   def create
-    @question = Question.new(question_params)
-    if @question.save
+    @resister_quiz_form = ResisterQuizForm.new(question_params)
+    if @resister_quiz_form.save
       redirect_to admin_questions_path, success: t('.success')
     else
       flash.now[:danger] = t('.fail')
@@ -41,7 +41,14 @@ class Admin::QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:title, :body)
+    params.require(:resister_quiz_form).permit(
+      :question_title,
+      :question_body,
+      :correct_choice,
+      :incorrect_choice_1,
+      :incorrect_choice_2,
+      :incorrect_choice_3
+    )
   end
 
   def get_question
